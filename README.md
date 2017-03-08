@@ -1,1 +1,1 @@
-# grow-demo-project-
+# Demo day project
