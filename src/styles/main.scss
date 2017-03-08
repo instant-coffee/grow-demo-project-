@@ -1,7 +1,18 @@
 @import "primer-css/index.scss";
 
+$grow-aqua: #29ABE2;
+$grow-dusk: #155671;
+$grow-mint: #25F0BD;
+$grow-cobalt: #4184F4;
+
+
 html{
   font-size: 62.5%;
   height: 100%;
   width: 100%;
+}
+
+#home > h1 {
+	color: $grow-cobalt;
+	font-family: 'Roboto', sans-serif;
 }
