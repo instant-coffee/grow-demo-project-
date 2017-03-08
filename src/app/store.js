@@ -6,13 +6,13 @@ import {
 import createLogger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import thunkMiddleware from 'redux-thunk';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import { createTokenApiMiddleware } from 'redux-token-api-middleware';
 import rootReducer from './reducers';
 import initialState from './state';
 
-const routingMiddleware = routerMiddleware(hashHistory);
+const routingMiddleware = routerMiddleware(browserHistory);
 const tokenApiMiddleware = createTokenApiMiddleware();
 const sagaMiddleware = createSagaMiddleware();
 
