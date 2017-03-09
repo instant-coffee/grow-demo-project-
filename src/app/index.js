@@ -1,4 +1,4 @@
-require('../styles/main.scss');
+import '../styles/main.scss' ;
 
 import 'babel-polyfill';
 import React from 'react';
@@ -8,8 +8,11 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore, push } from 'react-router-redux';
 import routes from './routes';
 import store from './store';
+import { loadTransactions } from './actions/index';
 
 const history = syncHistoryWithStore(browserHistory, store);
+
+store.dispatch(loadTransactions());
 
 render(
   <Provider store={store}>
